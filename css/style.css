@@ -1,0 +1,387 @@
+@charset "utf-8";
+
+/* common */
+:root {
+  --h1-fsz: clamp(1.2rem, 3vw, 2rem);
+  --h2-fsz: clamp(0.9rem, 2.5vw, 1.5rem);
+  --h3-fsz: clamp(0.9rem, 3vw, 1.2rem);
+  --li-fsz: 1rem;
+  --p-fsz: clamp(0.8rem, 2.5vw, 1rem);
+  --btn-fsz: clamp(0.6rem, 2.5vw, 1rem);
+  --tb-fsz: clamp(0.6rem, 2.7vw, 1.2rem);
+  --small-fsz: 0.8rem;
+  --i-size: 2.2rem;
+}
+
+body,section,dl,dt,dd,h1,h2,p,a,ul,li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background: url(../img/wood-texture_00031.jpg) center ;
+}
+
+h1,h2,h3 {
+  font-weight: bold;
+  color: black;
+}
+
+h1 {
+  font-size: var(--h1-fsz);
+}
+
+h2 {
+  font-size: var(--h2-fsz);
+}
+
+h3 {
+  font-size: var(--h3-fsz);
+}
+
+p {
+  margin: 0;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: var(--li-fsz);
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+}
+
+a:hover {
+  opacity: .5;
+}
+
+i {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+  object-fit: cover;
+}
+
+section {
+  max-width: 960px;
+}
+
+/* header */
+header {
+  background: url(../img/turu.png) no-repeat center/cover;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 960px;
+  height: 15vh;
+  transition: background-color .3s, box-shadow .3s;
+  z-index: 1;
+  display: flex;
+}
+
+header .logo a {
+  width: 100%;
+  height: 100%;
+  padding: 3.9vh 0 0 3vw;
+}
+
+header .logo a img {
+  height: 60%;
+}
+
+header.scrolled {
+  background-color: rgba(255, 255, 255, .95);
+  box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+}
+
+.btn {
+  width: 20%;
+  height: 6vh;
+  line-height: 6vh;
+  background: #11aaf1;
+  color: #f1ebeb;
+  text-align: center;
+  border-radius: 8px;
+  font-size: var(--btn-fsz);
+  font-weight: bold;
+  cursor: pointer;
+  margin: calc((15vh - 6vh) / 2) 3% 0 auto;
+  box-shadow: 2px 2px 5px gray;
+}
+
+.btn:hover {
+  opacity: .7;
+}
+
+/* hero */
+.hero {
+  padding-top: 15vh;
+  margin-bottom: 16px;
+}
+
+.hero table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.hero table td.inquiry {
+  padding-left: 16px;
+  width: 55%;
+  text-align: left;
+  font-size: var(--tb-fsz);
+  font-weight: bold;
+  color: rgb(8, 150, 8);
+}
+
+.hero table td.inquiry span {
+  font-size: 1.3em;
+}
+
+.hero h1.eye-catch {
+  margin: 16px 0;
+  text-align: center;
+  line-height: var(--h1-fsz);
+}
+
+.hero ul.problem-list {
+  position: relative;
+  height: 408px;
+  margin-bottom: 16px;
+}
+
+.hero ul.problem-list img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0.1;
+}
+
+.hero ul.problem-list li {
+  text-align: center;
+  background: #29d407;
+  margin: 0 auto;
+  padding: 0 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  width: 90%;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 2px 2px 8px gray;
+}
+
+.hero ul.problem-list li:nth-child(2) {
+  background: #e0f140de;
+}
+
+.hero ul.problem-list li:nth-child(3) {
+  background: #84b9f7d8;
+}
+
+.hero ul.problem-list li:nth-child(4) {
+  background: pink;
+}
+
+.hero ul.problem-list li:nth-child(5) {
+  background: #67e95c;
+}
+
+.hero ul.problem-list li:nth-child(6) {
+  background: #f1e423;
+}
+
+.hero ul.problem-list li:nth-child(7) {
+  background: #f8bb36;
+}
+
+.hero h2 {
+  text-align: center;
+  padding: 16px 0 ;
+  color: red;
+}
+
+.hero p {
+  text-align: center;
+  padding: 0 32px;
+  font-size: var(--p-fsz);
+}
+
+.hero p span {
+  color: red;
+  font-size: 1.4em;
+}
+
+/* guidance */
+.guidance {
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: var(--tb-fsz);
+  color: black;
+}
+
+.guidance table {
+  background: #e0f140de;
+  border-collapse: collapse;
+  width: 95%;
+  margin: 16px auto;
+  box-shadow: 3px 3px 5px gray;
+}
+
+.guidance th {
+  border: 1px solid black;
+  padding: 16px;
+  color: black;
+  background: #b2f020ec;
+}
+
+.guidance th.item {
+  width: 35%;
+}
+
+.guidance td {
+  border: 1px solid black;
+  padding: 16px;
+  text-align: center;
+}
+
+.guidance h2 {
+  text-align: center;
+}
+
+/* profile */
+.profile {
+  margin: 0 auto 16px;
+  padding: 0 16px;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 90%;
+}
+
+.profile h1 {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.profile div {
+  text-align: center;
+}
+
+.profile div img {
+  display: inline-block;
+  border: 1px solid black;
+  background: rgba(97, 238, 179, 0.534);
+  width: 35%;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.profile div p {
+  margin: 0 auto;
+  font-size: var(--p-fsz);
+  padding: 16px;
+  background: #b2f020ec;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px gray;
+}
+
+.profile h3 {
+  text-align: center;
+}
+
+.profile h3 a {
+  color: red;
+}
+
+/* copyright */
+.copyright {
+  background: #323435;
+  height: 15vh;
+  display: flex;
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.copyright small {
+  font-size: var(--small-fsz);
+  color: #eee;
+  margin-left: 16px;
+  line-height: 15vh;
+}
+
+.copyright a.sns {
+  width: var(--i-size);
+  height: var(--i-size);
+  border-radius: 50%;
+  text-align: center;
+  line-height: var(--i-size);
+  background: rgb(39, 38, 38);
+}
+
+.copyright a.sns.instagram {
+  position: absolute;
+  right: calc(var(--i-size) + 24px);
+  top: calc((15vh - var(--i-size)) / 2)
+}
+
+.copyright a.sns.twitter {
+  position: absolute;
+  right: calc(var(--i-size) * 2 + 32px);
+  top: calc((15vh - var(--i-size)) / 2)
+}
+
+.copyright i {
+  display: inline-block;
+  width: var(--i-size);
+  height: var(--i-size);
+  font-size: 1.3rem;
+  color: #f2f2f2;
+}
+
+.copyright i::before {
+  line-height: 0;
+}
+
+.copyright a.twitter:hover {
+  background: #00b0ed;
+  color: #fff;
+  opacity: 1;
+}
+
+.copyright a.instagram:hover {
+  background: linear-gradient(45deg, rgba(254,212,117,1) 0%,rgba(229,61,93,1) 50%,rgba(194,49,134,1) 70%,rgba(156,56,187,1) 100%);
+  color: #fff;
+  opacity: 1;
+}
+
+#to_top {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+#to_top.scrolled {
+  opacity: 1;
+}
+
+#to_top i {
+  font-size: var(--i-size);
+  color: #43cec2;
+}
