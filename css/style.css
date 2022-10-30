@@ -4,11 +4,11 @@
 :root {
   --h1-fsz: clamp(1.2rem, 3vw, 2rem);
   --h2-fsz: clamp(0.9rem, 2.5vw, 1.5rem);
-  --h3-fsz: clamp(0.9rem, 3vw, 1.2rem);
+  --h3-fsz: clamp(0.6rem, 2.5vw, 1.2rem);
   --li-fsz: 1rem;
-  --p-fsz: clamp(0.8rem, 2.5vw, 1rem);
+  --p-fsz: clamp(0.6rem, 2.5vw, 1rem);
   --btn-fsz: clamp(0.6rem, 2.5vw, 1rem);
-  --tb-fsz: clamp(0.6rem, 2.7vw, 1.2rem);
+  --tb-fsz: clamp(0.7rem, 2.7vw, 1.2rem);
   --small-fsz: 0.8rem;
   --i-size: 2.2rem;
 }
@@ -141,8 +141,8 @@ header.scrolled {
 }
 
 .hero table td.inquiry {
-  padding-left: 16px;
-  width: 55%;
+  padding-left: 8px;
+  width: 60%;
   text-align: left;
   font-size: var(--tb-fsz);
   font-weight: bold;
@@ -150,7 +150,7 @@ header.scrolled {
 }
 
 .hero table td.inquiry span {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .hero h1.eye-catch {
@@ -217,13 +217,13 @@ header.scrolled {
 
 .hero p {
   text-align: center;
-  padding: 0 32px;
+  padding: 0 16px;
   font-size: var(--p-fsz);
 }
 
 .hero p span {
   color: red;
-  font-size: 1.4em;
+  font-size: 1.25em;
 }
 
 /* guidance */
@@ -259,8 +259,9 @@ header.scrolled {
   text-align: center;
 }
 
-.guidance h2 {
+.guidance h3 {
   text-align: center;
+  padding: 0 8px;
 }
 
 /* profile */
