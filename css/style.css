@@ -235,7 +235,7 @@ header.scrolled {
 }
 
 .guidance table {
-  background: #ecf4f7de;
+  background: rgb(255, 255, 255);
   border-collapse: collapse;
   width: 95%;
   margin: 16px auto;
@@ -296,7 +296,7 @@ header.scrolled {
   margin: 0 auto;
   font-size: var(--p-fsz);
   padding: 16px;
-  background: #eaf3d5ec;
+  background: rgb(255, 255, 255);
   border-radius: 8px;
   box-shadow: 2px 2px 8px gray;
 }
