@@ -235,7 +235,7 @@ header.scrolled {
 }
 
 .guidance table {
-  background: #e0f140de;
+  background: #ecf4f7de;
   border-collapse: collapse;
   width: 95%;
   margin: 16px auto;
@@ -246,7 +246,7 @@ header.scrolled {
   border: 1px solid black;
   padding: 16px;
   color: black;
-  background: #b2f020ec;
+  background: #20d8f0ec;
 }
 
 .guidance th.item {
@@ -268,6 +268,7 @@ header.scrolled {
 .profile {
   margin: 0 auto 16px;
   padding: 0 16px;
+  /* background: #20d8f0ec; */
   border: 1px solid black;
   border-radius: 8px;
   width: 90%;
@@ -285,7 +286,7 @@ header.scrolled {
 .profile div img {
   display: inline-block;
   border: 1px solid black;
-  background: rgba(97, 238, 179, 0.534);
+  background: #20d8f0ec;
   width: 35%;
   border-radius: 50%;
   margin-bottom: 16px;
@@ -295,7 +296,7 @@ header.scrolled {
   margin: 0 auto;
   font-size: var(--p-fsz);
   padding: 16px;
-  background: #b2f020ec;
+  background: #eaf3d5ec;
   border-radius: 8px;
   box-shadow: 2px 2px 8px gray;
 }
