@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+section.privacy {
+  padding-top: 15vh;
+  margin-bottom: 16px;
+}
+
+section.privacy h1 {
+  color: rgb(11, 11, 129);
+  margin: 24px;
+}
+
+section.privacy h2 {
+  color: rgb(11, 11, 129);
+  margin: 0 24px 24px 24px;
+  display: flex;
+  align-items: center;
+}
+
+section.privacy h2::before {
+  border-top: 1px solid rgb(11, 11, 129);
+  content: "";
+  width: 2.5em;
+  margin-right: 1em;
+}
+
+section.privacy p {
+  margin: 0 24px 24px 24px;
+  font-weight: normal;
+  line-height: 2em;
+}
+
+section.privacy ul {
+  margin: 0 24px 24px 24px;
+}
+
+section.privacy li {
+  padding: 0 0 24px 24px;
+  font-weight: normal;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  text-indent: -2em;
+  line-height: 2em;
+}

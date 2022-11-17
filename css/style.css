@@ -2,11 +2,11 @@
 
 /* common */
 :root {
-  --h1-fsz: clamp(1.2rem, 3vw, 2rem);
-  --h2-fsz: clamp(0.9rem, 2.5vw, 1.5rem);
+  --h1-fsz: clamp(1.2rem, 3vw, 1.7rem);
+  --h2-fsz: clamp(1rem, 2.5vw, 1.5rem);
   --h3-fsz: clamp(0.6rem, 2.5vw, 1.2rem);
   --li-fsz: 1rem;
-  --p-fsz: clamp(0.6rem, 2.5vw, 1rem);
+  --p-fsz: clamp(0.8rem, 2.5vw, 1rem);
   --btn-fsz: clamp(0.6rem, 2.5vw, 1rem);
   --tb-fsz: clamp(0.7rem, 2.7vw, 1.2rem);
   --small-fsz: 0.8rem;
@@ -42,6 +42,7 @@ h3 {
 }
 
 p {
+  font-size: var(--p-fsz);
   margin: 0;
   font-weight: bold;
 }
@@ -268,7 +269,6 @@ header.scrolled {
 .profile {
   margin: 0 auto 16px;
   padding: 0 16px;
-  /* background: #20d8f0ec; */
   border: 1px solid black;
   border-radius: 8px;
   width: 90%;
@@ -317,13 +317,14 @@ header.scrolled {
   position: relative;
   max-width: 960px;
   margin: 0 auto;
+  align-items: center;
 }
 
 .copyright small {
+  display: block;
   font-size: var(--small-fsz);
   color: #eee;
   margin-left: 16px;
-  line-height: 15vh;
 }
 
 .copyright a.sns {
