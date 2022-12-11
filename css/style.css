@@ -203,7 +203,7 @@ header.scrolled {
   cursor: pointer;
   user-select: none;
   text-align: center;
-  background: #f8bb36;
+  background: #f3bf4e;
   margin: 0 auto;
   padding: 0 16px;
   border-radius: 8px;
@@ -233,23 +233,23 @@ header.scrolled {
 }
 
 .hero dl.problem-list .question2 dt {
-  background: #e0f140de;
+  background: #ebfd4cde;
 }
 
 .hero dl.problem-list .question3 dt {
-  background: #84b9f7d8;
+  background: #84baf7f3;
 }
 
 .hero dl.problem-list .question4 dt {
-  background: pink;
+  background: rgba(250, 162, 177, 0.918);
 }
 
 .hero dl.problem-list .question5 dt {
-  background: #67e95c;
+  background: #7eee74ea;
 }
 
 .hero dl.problem-list .question6 dt {
-  background: #f1e423;
+  background: #fcef3cef;
 }
 
 .hero dl.problem-list dd {
