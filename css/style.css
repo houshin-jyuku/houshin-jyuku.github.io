@@ -42,6 +42,10 @@ p {
   line-height: 2em;
 }
 
+dt, dd {
+  font-size: 0.9em;
+}
+
 ul {
   list-style: none;
   margin: 0;

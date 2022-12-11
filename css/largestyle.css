@@ -8,6 +8,10 @@
     margin: 0 auto;
   }
 
+  dt, dd {
+    font-size: 1em;
+  }
+
   /* large header */
   header {
     background-size: 100% 200%;
