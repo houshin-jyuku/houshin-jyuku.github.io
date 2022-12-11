@@ -4,13 +4,19 @@
   const header = document.querySelector('header');
   const toTop = document.getElementById('to_top');
   const onScrollObserver = new IntersectionObserver(onScrollCallback);
-  // const images = document.querySelectorAll('.hero a');
-  // const open = document.getElementById('open');
-  // const overlay =document.querySelector('.overlay');
-  // const close = document.getElementById('close');
-  // const course = document.getElementById('course');
-  // const h2s = document.querySelectorAll('h2.select');
-  // let currentIndex = 0;
+  const dts = document.querySelectorAll('dt');
+
+  dts.forEach(dt => {
+    dt.addEventListener('click', () => {
+      dt.parentNode.classList.toggle('appear');
+
+      dts.forEach(el => {
+        if (dt !== el) {
+          el.parentNode.classList.remove('appear');
+        }
+      });
+    });
+  });
 
   function onScrollCallback(entries) {
     entries.forEach(entry => {
@@ -34,42 +40,4 @@
       behavior: 'smooth',
     });
   });
-  
-  // function play() {
-  //   setTimeout(() => {
-  //     images[currentIndex].classList.remove('current');
-  //     currentIndex++;
-  //     if (currentIndex > images.length - 1) {
-  //       currentIndex = 0;
-  //     }
-  //     images[currentIndex].classList.add('current');
-  //     play();
-  //   }, 4000);
-  // }
-
-  // play();
-
-  // open.addEventListener('click', () => {
-  //   overlay.classList.add('show');
-  //   open.classList.add('hide');
-  // });
-
-  // close.addEventListener('click', () => {
-  //   overlay.classList.remove('show');
-  //   open.classList.remove('hide');
-  // });
-
-  // btn.addEventListener('click', () => {
-  //   course.classList.toggle('show');
-  //   h2s.forEach(h2 => {
-  //     h2.parentNode.classList.remove('appear');
-  //   });
-  // });
-
-  // h2s.forEach(h2 => {
-  //   h2.addEventListener('click', () => {
-  //     h2.parentNode.classList.toggle('appear');
-  //   });
-  // });
-
 }

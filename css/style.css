@@ -2,13 +2,11 @@
 
 /* common */
 :root {
-  --h1-fsz: clamp(1.2rem, 3vw, 1.7rem);
-  --h2-fsz: clamp(1rem, 2.5vw, 1.5rem);
+  --h1-fsz: clamp(1.5rem, 3vw, 1.9rem);
+  --h2-fsz: clamp(1.2rem, 2.7vw, 1.8rem);
   --h3-fsz: clamp(0.6rem, 2.5vw, 1.2rem);
-  --li-fsz: 1rem;
-  --p-fsz: clamp(0.8rem, 2.5vw, 1rem);
   --btn-fsz: clamp(0.6rem, 2.5vw, 1rem);
-  --tb-fsz: clamp(0.7rem, 2.7vw, 1.2rem);
+  --tb-fsz: clamp(1rem, 2.7vw, 1.2rem);
   --small-fsz: 0.8rem;
   --i-size: 2.2rem;
 }
@@ -21,12 +19,13 @@ body,section,dl,dt,dd,h1,h2,p,a,ul,li {
 
 body {
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  background: url(../img/wood-texture_00031.jpg) center ;
+  /* font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; */
+  background: url(../img/wood-texture_00031.jpg) center;
+  color: rgb(56, 53, 53);
 }
 
-h1,h2,h3 {
+h1,h2 {
   font-weight: bold;
-  color: black;
 }
 
 h1 {
@@ -37,14 +36,10 @@ h2 {
   font-size: var(--h2-fsz);
 }
 
-h3 {
-  font-size: var(--h3-fsz);
-}
-
 p {
-  font-size: var(--p-fsz);
+  font-size: 1rem;
   margin: 0;
-  font-weight: bold;
+  line-height: 2em;
 }
 
 ul {
@@ -54,7 +49,7 @@ ul {
 }
 
 li {
-  font-size: var(--li-fsz);
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -67,6 +62,7 @@ a {
 
 a:hover {
   opacity: .5;
+  text-decoration: underline;
 }
 
 i {
@@ -83,6 +79,37 @@ section {
   max-width: 960px;
 }
 
+blockquote {
+  position: relative;
+  padding: 35px 15px 10px 15px;
+  margin: 8px;
+  box-sizing: border-box;
+  font-style: italic;
+  background: #f5f5f5;
+  color: #777777;
+  border-left: 4px solid #9dd4ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+blockquote:before{
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  content: "\f10d";
+  font-family: FontAwesome;
+  color: #9dd4ff;
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+blockquote p {
+  padding: 0;
+  margin: 7px 0;
+  line-height: 1.7;
+}
+
 /* header */
 header {
   background: url(../img/turu.png) no-repeat center/cover;
@@ -90,20 +117,19 @@ header {
   top: 0;
   width: 100%;
   max-width: 960px;
-  height: 15vh;
+  height: 100px;
   transition: background-color .3s, box-shadow .3s;
   z-index: 1;
   display: flex;
+  align-items: center;
 }
 
 header .logo a {
-  width: 100%;
-  height: 100%;
-  padding: 3.9vh 0 0 3vw;
+  width: 70%;
 }
 
 header .logo a img {
-  height: 60%;
+  margin: 0 8px;
 }
 
 header.scrolled {
@@ -113,8 +139,9 @@ header.scrolled {
 
 .btn {
   width: 20%;
-  height: 6vh;
-  line-height: 6vh;
+  max-width: 150px;
+  height: 2.5rem;
+  line-height: 2.5rem;
   background: #11aaf1;
   color: #f1ebeb;
   text-align: center;
@@ -122,7 +149,7 @@ header.scrolled {
   font-size: var(--btn-fsz);
   font-weight: bold;
   cursor: pointer;
-  margin: calc((15vh - 6vh) / 2) 3% 0 auto;
+  margin: 0 8px 0 auto;
   box-shadow: 2px 2px 5px gray;
 }
 
@@ -132,7 +159,7 @@ header.scrolled {
 
 /* hero */
 .hero {
-  padding-top: 15vh;
+  padding-top: 100px;
   margin-bottom: 16px;
 }
 
@@ -147,11 +174,10 @@ header.scrolled {
   text-align: left;
   font-size: var(--tb-fsz);
   font-weight: bold;
-  color: rgb(8, 150, 8);
 }
 
 .hero table td.inquiry span {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .hero h1.eye-catch {
@@ -160,22 +186,24 @@ header.scrolled {
   line-height: var(--h1-fsz);
 }
 
-.hero ul.problem-list {
+.hero dl.problem-list {
   position: relative;
-  height: 408px;
   margin-bottom: 16px;
 }
 
-.hero ul.problem-list img {
-  height: 100%;
+.hero dl.problem-list img {
+  height: 440px;
   position: absolute;
   top: 0;
-  opacity: 0.1;
+  opacity: 0.3;
+  z-index: -1;
 }
 
-.hero ul.problem-list li {
+.hero dl.problem-list dt {
+  cursor: pointer;
+  user-select: none;
   text-align: center;
-  background: #29d407;
+  background: #f8bb36;
   margin: 0 auto;
   padding: 0 16px;
   border-radius: 8px;
@@ -184,59 +212,128 @@ header.scrolled {
   height: 60px;
   line-height: 60px;
   box-shadow: 2px 2px 8px gray;
+  opacity: 0.8;
+  position: relative;
 }
 
-.hero ul.problem-list li:nth-child(2) {
+.hero dl.problem-list dt::before {
+  content: 'Q. ';
+}
+
+.hero dl.problem-list dt::after {
+  content: '+';
+  position: absolute;
+  top: 0px;
+  right: 16px;
+  transition: transform .3s;
+}
+
+.hero dl.problem-list > div.appear dt::after {
+  transform: rotate(45deg);
+}
+
+.hero dl.problem-list .question2 dt {
   background: #e0f140de;
 }
 
-.hero ul.problem-list li:nth-child(3) {
+.hero dl.problem-list .question3 dt {
   background: #84b9f7d8;
 }
 
-.hero ul.problem-list li:nth-child(4) {
+.hero dl.problem-list .question4 dt {
   background: pink;
 }
 
-.hero ul.problem-list li:nth-child(5) {
+.hero dl.problem-list .question5 dt {
   background: #67e95c;
 }
 
-.hero ul.problem-list li:nth-child(6) {
+.hero dl.problem-list .question6 dt {
   background: #f1e423;
 }
 
-.hero ul.problem-list li:nth-child(7) {
-  background: #f8bb36;
+.hero dl.problem-list dd {
+  padding: 8px;
+  text-align: center;
+  display: none;
 }
 
-.hero h2 {
-  text-align: center;
-  padding: 16px 0 ;
-  color: red;
+.hero dl.problem-list dd::before {
+  content: 'A. ';
+}
+
+.hero dl.problem-list > div.appear dd {
+  display: block;
+  animation: .3s fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.hero .reference-contents {
+  margin: 16px;
 }
 
 .hero p {
-  text-align: center;
-  padding: 0 16px;
+  margin-bottom: 8px;
+}
+
+.hero .reference-contents p a {
+  color: rgb(38, 38, 245);
+}
+
+.hero .reference-contents h1 {
+  margin-bottom: 16px;
+}
+.hero ul.reference {
+  border-top: 3px double gray;
+  border-bottom: 3px double gray;
+}
+
+.hero ul.reference li {
+  margin: 8px 16px;
+}
+
+.hero ul.reference a {
+  font-weight: normal;
   font-size: var(--p-fsz);
 }
 
-.hero p span {
-  color: red;
-  font-size: 1.25em;
+.hero h2 {
+  margin: 16px 0;
+  padding: 7px;
+  border-bottom: 1px solid #56ad9a;
+  border-left: 10px solid #56ad9a;
+}
+
+.hero ul.conditions {
+  margin: 8px 0px;
+}
+
+.hero ul.conditions li {
+  margin-bottom: 8px;
 }
 
 /* guidance */
 .guidance {
   margin-bottom: 16px;
-  font-weight: bold;
   font-size: var(--tb-fsz);
-  color: black;
+}
+
+.guidance h2 {
+  text-align: center;
 }
 
 .guidance table {
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.9);
   border-collapse: collapse;
   width: 95%;
   margin: 16px auto;
@@ -246,7 +343,6 @@ header.scrolled {
 .guidance th {
   border: 1px solid black;
   padding: 16px;
-  color: black;
   background: #20d8f0ec;
 }
 
@@ -260,9 +356,12 @@ header.scrolled {
   text-align: center;
 }
 
-.guidance h3 {
-  text-align: center;
-  padding: 0 8px;
+.guidance p {
+  margin: 0 16px 16px ;
+}
+
+.guidance a {
+  color: blue;
 }
 
 /* profile */
@@ -288,24 +387,25 @@ header.scrolled {
   border: 1px solid black;
   background: #20d8f0ec;
   width: 35%;
+  max-height: 250px;
   border-radius: 50%;
   margin-bottom: 16px;
 }
 
 .profile div p {
-  margin: 0 auto;
-  font-size: var(--p-fsz);
+  margin: 0 auto 16px;
   padding: 16px;
-  background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255, 0.9);
   border-radius: 8px;
   box-shadow: 2px 2px 8px gray;
+  text-align: left;
 }
 
-.profile h3 {
-  text-align: center;
+.profile p {
+  margin: 0 16px 16px;
 }
 
-.profile h3 a {
+.profile p a {
   color: red;
 }
 

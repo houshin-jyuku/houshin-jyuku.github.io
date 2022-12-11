@@ -14,21 +14,6 @@
     margin-left: calc((100% - 960px) / 2);
   }
 
-  header .logo a {
-    padding: 2.4vh 0 0 3vw;
-  }
-
-  header .logo a img {
-    height: 80%;
-  }
-
-  header .btn {
-    width: 12%;
-    height: 9vh;
-    line-height: 9vh;
-    margin-top: calc((15vh - 9vh) / 2);
-  }
-
   /* large hero */
   .hero table td.tel {
     width: 40%;
@@ -38,51 +23,53 @@
     margin: 32px 0;
   }
   
-  .hero ul.problem-list {
+  .hero dl.problem-list {
     width: 100%;
+    height: 440px;
   }
 
-  .hero ul.problem-list img {
+  .hero dl.problem-list img {
     opacity: 1;
     width: 50%;
-    margin-left: calc((960px - 50%) / 2);
+    margin: 0 25%;
+    border-radius: 8px;
   }
   
-  .hero ul.problem-list li {
-    width: 30%;
+  .hero dl.problem-list div {
+    width: 40%;
     font-size: 0.85rem;
     position: absolute;
     text-align: center;
   }
   
-  .hero li:nth-child(2) {
-    top: 0;
+  .hero .question1 {
+    top: 20px;
     left: 0;
   }
 
-  .hero li:nth-child(3) {
-    top: 24px;
+  .hero .question2 {
+    top: 34px;
     right: -20px;
   }
   
-  .hero li:nth-child(4) {
-    top: 148px;
-    left: -80px;
+  .hero .question3 {
+    top: 178px;
+    left: -50px;
   }
   
-  .hero li:nth-child(5) {
-    top: 152px;
+  .hero .question4 {
+    top: 192px;
     right: -80px;
   }
 
-  .hero li:nth-child(6) {
-    top: 296px;
-    right: 0px;
+  .hero .question5 {
+    top: 326px;
+    left: 0px;
   }
   
-  .hero li:nth-child(7) {
-    top: 286px;
-    left: -20px;
+  .hero .question6 {
+    top: 336px;
+    right: -20px;
   }
 
   /*large profile*/
@@ -90,12 +77,12 @@
     display: flex;
   }
 
-  .profile div img {
-    width: 20%;
-  }
-
   .profile div p {
     text-align: left;
     margin-left: 32px;
+  }
+
+  .profile p {
+    text-align: center;
   }
 }
