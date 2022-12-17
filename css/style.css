@@ -2,11 +2,12 @@
 
 /* common */
 :root {
-  --h1-fsz: clamp(1.5rem, 3vw, 1.9rem);
-  --h2-fsz: clamp(1.2rem, 2.7vw, 1.8rem);
-  --h3-fsz: clamp(0.6rem, 2.5vw, 1.2rem);
-  --btn-fsz: clamp(0.6rem, 2.5vw, 1rem);
-  --tb-fsz: clamp(1rem, 2.7vw, 1.2rem);
+  --h1-fsz: clamp(1.5rem, 2.9vw, 1.9rem);
+  --h2-fsz: clamp(1.2rem, 2.9vw, 1.8rem);
+  --h3-fsz: clamp(0.6rem, 2.9vw, 1.2rem);
+  --btn-fsz: clamp(0.6rem, 2.9vw, 1rem);
+  --tb-fsz: clamp(1rem, 2.9vw, 1.2rem);
+  --list-fsz:clamp(0.9em, 2.9vw, 1em);
   --small-fsz: 0.8rem;
   --i-size: 2.2rem;
 }
@@ -43,7 +44,7 @@ p {
 }
 
 dt, dd {
-  font-size: 0.9em;
+  font-size: var(--list-fsz);
 }
 
 ul {
@@ -347,7 +348,7 @@ header.scrolled {
 .guidance th {
   border: 1px solid black;
   padding: 16px;
-  background: #20d8f0ec;
+  background: #1ae25dbd;
 }
 
 .guidance th.item {
@@ -389,7 +390,7 @@ header.scrolled {
 .profile div img {
   display: inline-block;
   border: 1px solid black;
-  background: #20d8f0ec;
+  background:#1ae25dbd;
   width: 35%;
   max-height: 250px;
   border-radius: 50%;
