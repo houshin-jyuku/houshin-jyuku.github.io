@@ -195,6 +195,7 @@ header .btn:hover {
 }
 
 #eye-catch table td.inquiry {
+  padding-left: 16px;
   width: 60%;
   text-align: left;
   font-size: var(--tb-fsz);
@@ -205,9 +206,14 @@ header .btn:hover {
   font-size: 1.3em;
 }
 
-h1.bigtitle {
+.bigtitle {
   max-width: 960px;
-  margin: 16px auto;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.bigtitle h1 {
+  margin: 16px 0;
   padding: 7px;
   border-bottom: 1px solid #56ad9a;
   border-left: 10px solid #56ad9a;
@@ -263,8 +269,8 @@ h1.bigtitle {
   transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
 }
 
-/* contents */
-.contents {
+/* content */
+.content {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 16px;
@@ -450,7 +456,7 @@ h1.bigtitle {
   padding-left: 1em;
 }
 
-#guidance .content {
+#guidance .price {
   display: none;
 }
 
@@ -600,7 +606,7 @@ h1.bigtitle {
 #to_top {
   position: fixed;
   bottom: 8px;
-  right: 16px;
+  right: 8px;
   opacity: 0;
   transition: opacity .3s;
 }

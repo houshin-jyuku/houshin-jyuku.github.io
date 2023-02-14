@@ -111,12 +111,12 @@
     display: none;
   }
   
-  #guidance .content {
+  #guidance .price {
     display: none;
     margin-bottom: 16px;
   }
 
-  #guidance .content.active {
+  #guidance .price.active {
     display: block;
     background: #56ad9a;
     color: #e0e0e0;
@@ -125,11 +125,11 @@
     animation: fadeIn .3s;
   }
 
-  #guidance .content.active.disappear {
+  #guidance .price.active.disappear {
     animation: fadeOut .3s;
   }
 
-  #guidance .content.active li {
+  #guidance .price.active li {
     padding-left: 1em;
   }
 }

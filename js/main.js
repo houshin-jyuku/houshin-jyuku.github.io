@@ -5,7 +5,7 @@
   const toTop = document.getElementById('to_top');
   const onScrollObserver = new IntersectionObserver(onScrollCallback);
   const dts = document.querySelectorAll('dt');
-  const contents = document.querySelectorAll('.content');
+  const prices = document.querySelectorAll('.price');
   
   dts.forEach(clickedDt => {
     clickedDt.addEventListener('click', () => {
@@ -25,8 +25,8 @@
         });
         clickedDt.classList.add('active');
 
-        contents.forEach(content => {
-          content.classList.remove('active');
+        prices.forEach(price => {
+          price.classList.remove('active');
         });
         document.getElementById(clickedDt.dataset.id).classList.add('active');
       } else {
