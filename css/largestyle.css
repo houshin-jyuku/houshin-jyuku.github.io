@@ -14,74 +14,122 @@
     margin-left: calc((100% - 960px) / 2);
   }
 
-  /* large hero */
-  .hero table td.tel {
+  header .logo a img {
     width: 40%;
   }
-
-  .hero h1.eye-catch {
-    margin: 32px 0;
+  
+  header .parent::before {
+    padding-top: 3.4em;
   }
   
-  .hero dl.problem-list {
+  header .btn {
+    line-height: 3.4em;
+  }
+
+/* large hero */  
+  #hero ul.problem-list {
     width: 100%;
     height: 440px;
   }
 
-  .hero dl.problem-list img {
+  #hero ul.problem-list img {
     opacity: 1;
     width: 50%;
     margin: 0 25%;
     border-radius: 8px;
   }
   
-  .hero dl.problem-list div {
-    width: 42%;
+  #hero ul.problem-list li {
+    width: fit-content;
     position: absolute;
     text-align: center;
+    padding: 0 8px;
   }
   
-  .hero .question1 {
+  #hero ul li.question1 {
     top: 20px;
-    left: 0;
+    left: 60px;
   }
 
-  .hero .question2 {
+  #hero ul li.question2 {
     top: 34px;
     right: -20px;
   }
   
-  .hero .question3 {
+  #hero ul li.question3 {
     top: 178px;
     left: -50px;
   }
   
-  .hero .question4 {
+  #hero ul li.question4 {
     top: 192px;
     right: -80px;
   }
 
-  .hero .question5 {
+  #hero ul li.question5 {
     top: 326px;
     left: 0px;
   }
   
-  .hero .question6 {
+  #hero ul li.question6 {
     top: 336px;
     right: -20px;
   }
 
-  /*large profile*/
-  .profile div {
+  /* large guidance */
+  #guidance dl .course {
+    width: 240px;
+  }
+
+  #guidance dl {
+    margin: 0;
     display: flex;
+    justify-content: center;
   }
 
-  .profile div p {
-    text-align: left;
-    margin-left: 32px;
+  #guidance dl .course {
+    margin: 0;
+  }
+  
+  #guidance dl .course dt {
+    margin: 0 8px;
+    font-size: 0.6em;
+    border-radius: 8px 8px 0 0;
+    box-shadow: none;
+    background: #56ad9a93;
   }
 
-  .profile p {
-    text-align: center;
+  #guidance dl .course dt.active {
+    background: #56ad9a;
+  }
+
+  #guidance dl .course dt::after {
+    content: '';
+  }
+  
+  #guidance dl .course dt.appear + dd {
+    display: none;
+  }
+  
+  #guidance .content {
+    display: none;
+    margin-bottom: 16px;
+  }
+
+  #guidance .content.active {
+    display: block;
+    background: #56ad9a;
+    color: #e0e0e0;
+    padding: 16px;
+    border-radius: 8px;
+    animation: fadeIn .3s;
+  }
+
+  #guidance .content.active.disappear {
+    animation: fadeOut .3s;
+  }
+
+  #guidance .content.active li {
+    padding-left: 1em;
   }
 }
