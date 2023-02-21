@@ -96,11 +96,11 @@
     font-size: 0.6em;
     border-radius: 8px 8px 0 0;
     box-shadow: none;
-    background: #56ad9a93;
+    background: #49bbc4;
   }
 
   #guidance dl .course dt.active {
-    background: #56ad9a;
+    background: #49bbc4;
   }
 
   #guidance dl .course dt::after {
@@ -118,7 +118,7 @@
 
   #guidance .price.active {
     display: block;
-    background: #56ad9a;
+    background: #49bbc4;
     color: #e0e0e0;
     padding: 16px;
     border-radius: 8px;
