@@ -10,7 +10,7 @@
   --tb-fsz: clamp(0.9rem, 3.2vw, 1rem);
   --list-fsz: clamp(0.8rem, 3.2vw, 1rem);
   --small-fsz: clamp(0.7rem, 3.2vw, 0.8rem);
-  --i-size: 35px;
+  --i-size: 40px;
 }
 
 body {
@@ -80,7 +80,7 @@ a:hover {
 i {
   cursor: pointer;
   display: inline-block;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #fff;
 }
 
