@@ -4,7 +4,9 @@
 @media (min-width: 960px) {
 
   /* common */
-
+  a.sns {
+    padding: 0;
+  }
   /* header */
   header {
     width: 100%;
@@ -44,7 +46,8 @@
   }
 
   header .pc-menu a.instagram {
-    width: var(--i-size);
+    width: var(--a-fsz);
+    margin-top: 30px;
   }
   
   header .pc-menu .btn {

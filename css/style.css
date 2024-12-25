@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* common */
 :root {
-  --h1-fsz: clamp(1.5rem, 3.2vw, 2rem);
+  --h1-fsz: clamp(1.6rem, 3.2vw, 2rem);
   --h2-fsz: clamp(1.3rem, 3.2vw, 1.7rem);
   --h3-fsz: clamp(1.1rem, 3.2vw, 1.5rem);
   --li-fsz: clamp(1.1rem, 3.2vw, 1.4rem);
@@ -10,7 +10,8 @@
   --tb-fsz: clamp(0.9rem, 3.2vw, 1rem);
   --list-fsz: clamp(0.8rem, 3.2vw, 1rem);
   --small-fsz: clamp(0.7rem, 3.2vw, 0.8rem);
-  --i-size: 40px;
+  --i-fsz: clamp(1.4rem, 3.2vw, 1.6rem);
+  --a-fsz: 40px;
 }
 
 body {
@@ -77,22 +78,6 @@ a:hover {
   transition: opacity .3s;
 }
 
-i {
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.6rem;
-  color: #fff;
-}
-
-i.bi {
-  line-height: 35px;
-}
-
-i.bi::before{
-  line-height: 0;
-  vertical-align: -.18em;
-}
-
 img {
   width: 100%;
   vertical-align: bottom;
@@ -100,18 +85,31 @@ img {
 }
 
 a.sns {
-  width: var(--i-size);
-  height: var(--i-size);
-  padding-bottom: 3px;
+  width: var(--a-fsz);
+  height: var(--a-fsz);
   border-radius: 50%;
   text-align: center;
-  line-height: var(--i-size);
+  line-height: var(--a-fsz);
   background: rgb(39, 38, 38);
+  position: relative;
 }
 
 a.sns.instagram:hover {
   background: linear-gradient(45deg, rgba(254,212,117,1) 0%,rgba(229,61,93,1) 50%,rgba(194,49,134,1) 70%,rgba(156,56,187,1) 100%);
   opacity: 1;
+}
+
+i.bi.bi-instagram {
+  position: absolute;
+  left: calc((40px - var(--i-fsz)) / 2);
+  cursor: pointer;
+  display: inline-block;
+  font-size: var(--i-fsz);
+  color: #fff;
+}
+
+i.bi::before{
+  vertical-align: -.18em;
 }
 
 .fadeIn {
@@ -561,6 +559,10 @@ header .sp-menu #open.hide {
   align-items: center;
 }
 
+.copyright.privacy_copyright {
+  line-height: 100%;
+}
+
 .copyright small {
   display: block;
   font-size: var(--small-fsz);
@@ -574,8 +576,8 @@ header .sp-menu #open.hide {
 
 .copyright a.sns.instagram {
   position: absolute;
-  right: calc(var(--i-size) + 24px);
-  top: calc((100% - var(--i-size)) / 2)
+  right: calc(var(--i-fsz) + 24px);
+  top: calc((100% - var(--i-fsz)) / 2)
 }
 
 #to_top {
@@ -591,6 +593,6 @@ header .sp-menu #open.hide {
 }
 
 #to_top i {
-  font-size: var(--i-size);
+  font-size: var(--h1-fsz);
   color: #aebabb;
 }
