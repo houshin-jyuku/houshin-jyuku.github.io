@@ -32,6 +32,7 @@
 
   header .pc-menu li {
     width: 100px;
+    height: 100px;
     text-align: center;
     margin-right: 8px;
     line-height: 100px;
