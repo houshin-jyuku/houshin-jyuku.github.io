@@ -6,22 +6,12 @@ section.privacy {
 }
 
 section.privacy h1 {
-  color: rgb(11, 11, 129);
   margin: 24px;
 }
 
 section.privacy h2 {
-  color: rgb(11, 11, 129);
   margin: 0 24px 24px;
   display: flex;
-  align-items: center;
-}
-
-section.privacy h2::before {
-  border-top: 1px solid rgb(11, 11, 129);
-  content: "";
-  width: 2.5em;
-  margin-right: 1em;
 }
 
 section.privacy p {
@@ -35,8 +25,8 @@ section.privacy ul {
 }
 
 section.privacy li {
-  padding: 0 0 24px 24px;
+  margin: 0 0 24px 24px;
   font-weight: normal;
-  text-indent: -2em;
+  text-indent: -24px;
   line-height: 2em;
 }
