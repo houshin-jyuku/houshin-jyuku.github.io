@@ -474,6 +474,11 @@ header .sp-menu #open.hide {
   border-radius: 4px;
 }
 
+/* content */
+.text_content {
+  margin-left: 1rem;
+}
+
 /* profile */
 #profile div.detail {
   margin: 0 auto 16px;
