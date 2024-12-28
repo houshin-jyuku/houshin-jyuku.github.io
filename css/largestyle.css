@@ -7,6 +7,12 @@
   a.sns {
     padding: 0;
   }
+
+  i.bi.bi-instagram {
+    top: 0;
+    left: calc((40px - var(--i-fsz)) / 2);
+  }
+
   /* header */
   header {
     width: 100%;

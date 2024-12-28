@@ -577,13 +577,13 @@ header .sp-menu #open.hide {
 
 .copyright a.sns.instagram {
   position: absolute;
-  right: calc(var(--i-fsz) + 24px);
+  right: calc(var(--i-fsz) + 32px);
   top: calc((100% - var(--i-fsz)) / 2)
 }
 
 #to_top {
   position: fixed;
-  bottom: 8px;
+  bottom: 16px;
   right: 8px;
   opacity: 0;
   transition: opacity .3s;
@@ -594,6 +594,6 @@ header .sp-menu #open.hide {
 }
 
 #to_top i {
-  font-size: var(--h1-fsz);
+  font-size: 40px;
   color: #aebabb;
 }
