@@ -123,7 +123,7 @@ i.bi::before{
 
 hr.leftline {
   position: absolute;
-  top: 0;
+  top: -6px;
   width: 100%;
   left: -105%;
   animation: leftIn 3s ease-in-out 2.5s forwards;
@@ -362,6 +362,7 @@ header .sp-menu #open.hide {
 }
 
 #main .catch {
+  margin-top: 6px;
   position: relative;
   height: 48px;
 } 
