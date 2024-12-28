@@ -542,6 +542,11 @@ header .sp-menu #open.hide {
   padding: 0.5em;
 }
 
+#course .text_course {
+  text-indent: -1rem;
+  padding-left: 1rem;
+}
+
 #course details[open] {
   padding: 0.5em;
 }
