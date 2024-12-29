@@ -484,7 +484,12 @@ header .sp-menu #open.hide {
 }
 
 /* contents */
-.text_content {
+
+#contents .h3_content {
+  margin-top: 16px;
+}
+
+#contents .text_content {
   margin-left: 1rem;
   font-size: var(--p-fsz);
 }
