@@ -6,7 +6,7 @@
   --h3-fsz: clamp(1.3rem, 2.5vw, 1.6rem);
   --li-fsz: clamp(1.2rem, 2.5vw, 1.4rem);
   --p-fsz: clamp(1.2rem, 2.5vw, 1.4rem);
-  --btn-fsz: clamp(0.6rem, 3.2vw, 0.8rem);
+  --btn-fsz: clamp(0.6rem, 3.2vw, 1.0rem);
   --tb-fsz: clamp(0.9rem, 3.2vw, 1rem);
   --list-fsz: clamp(0.8rem, 3.2vw, 1rem);
   --small-fsz: clamp(0.7rem, 3.2vw, 0.8rem);
@@ -276,10 +276,14 @@ header .sp-menu #open.hide {
   transition: opacity .3s, transform .4s;
 }
 
-.overlay li .free_trial_lesson {
-  border: 2px solid;
-  border-radius: 4px;
-  padding: 0 8px;
+.overlay li .btn {
+  background: black;
+  border-radius: 32px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px gray;
+  line-height: 40px;
+  transition: opacity .3s;
+  padding: 0 16px;
 }
 
 .overlay li img {

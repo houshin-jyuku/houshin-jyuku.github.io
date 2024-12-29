@@ -41,7 +41,7 @@
   }
 
   header .pc-menu li {
-    width: 100px;
+    width: 132px;
     height: 100px;
     text-align: center;
     margin-right: 8px;
@@ -79,7 +79,7 @@
 
   header .pc-menu img {
     width: 70%;
-    margin-bottom: 15px;
+    margin-bottom: 3.8px;
   }
 
   header .sp-menu {
