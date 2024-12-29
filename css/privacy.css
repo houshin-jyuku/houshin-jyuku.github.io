@@ -3,6 +3,7 @@
 section.privacy {
   padding-top: 15vh;
   margin-bottom: 16px;
+  max-width: 800px;
 }
 
 section.privacy h1 {

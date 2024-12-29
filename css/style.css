@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /* common */
 :root {
-  --h1-fsz: clamp(1.6rem, 3.2vw, 2rem);
-  --h2-fsz: clamp(1.3rem, 3.2vw, 1.7rem);
-  --h3-fsz: clamp(1.1rem, 3.2vw, 1.5rem);
-  --li-fsz: clamp(1.1rem, 3.2vw, 1.4rem);
-  --p-fsz: clamp(1.1rem, 3.2vw, 1.3rem);
+  --h1-fsz: clamp(1.8rem, 2.5vw, 2.5rem);
+  --h2-fsz: clamp(1.4rem, 2.5vw, 1.8rem);
+  --h3-fsz: clamp(1.3rem, 2.5vw, 1.6rem);
+  --li-fsz: clamp(1.2rem, 2.5vw, 1.4rem);
+  --p-fsz: clamp(1.2rem, 2.5vw, 1.4rem);
   --btn-fsz: clamp(0.6rem, 3.2vw, 0.8rem);
   --tb-fsz: clamp(0.9rem, 3.2vw, 1rem);
   --list-fsz: clamp(0.8rem, 3.2vw, 1rem);
@@ -123,7 +123,7 @@ i.bi::before{
 
 hr.leftline {
   position: absolute;
-  top: -6px;
+  top: -3px;
   width: 100%;
   left: -105%;
   animation: leftIn 3s ease-in-out 2.5s forwards;
@@ -276,6 +276,12 @@ header .sp-menu #open.hide {
   transition: opacity .3s, transform .4s;
 }
 
+.overlay li .free_trial_lesson {
+  border: 2px solid;
+  border-radius: 4px;
+  padding: 0 8px;
+}
+
 .overlay li img {
   display: flex;
   margin: 0 auto;
@@ -374,7 +380,6 @@ header .sp-menu #open.hide {
 
 /* eyeimg */
 #eyeimg .images {
-  /* aspect-ratio: 4 / 3; */
   overflow: hidden;
   position: relative;
 }
@@ -474,9 +479,10 @@ header .sp-menu #open.hide {
   border-radius: 4px;
 }
 
-/* content */
+/* contents */
 .text_content {
   margin-left: 1rem;
+  font-size: var(--p-fsz);
 }
 
 /* profile */

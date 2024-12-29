@@ -13,7 +13,11 @@
     left: calc((40px - var(--i-fsz)) / 2);
   }
 
-  /* header */
+  hr.leftline {
+    top: -6px;
+  }
+
+  /* large header */
   header {
     width: 100%;
     height: auto;
@@ -110,6 +114,8 @@
     width: 90%;
     margin: 0 auto;
   }
+
+  /* large contents */
 
   /* large profile */
   #profile .personal {
