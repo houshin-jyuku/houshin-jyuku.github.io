@@ -123,7 +123,7 @@ i.bi::before{
 
 hr.leftline {
   position: absolute;
-  top: -3px;
+  top: 0;
   width: 100%;
   left: -105%;
   animation: leftIn 3s ease-in-out 2.5s forwards;
