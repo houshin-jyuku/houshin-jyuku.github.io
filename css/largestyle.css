@@ -28,16 +28,14 @@
 
   header .pc-menu ul {
     display: flex;
+    align-items: center;
   }
 
   header .pc-menu li {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 150px;
-    height: 100px;
     text-align: center;
-    line-height: 100px;
   }
 
   header .pc-menu a {
@@ -69,8 +67,8 @@
   }
 
   header .pc-menu img {
-    width: 70%;
-    margin-bottom: 3.8px;
+    width: 65%;
+    /* margin-bottom: 3.8px; */
   }
 
   header .sp-menu {
