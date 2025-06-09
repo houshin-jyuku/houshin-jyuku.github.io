@@ -8,20 +8,10 @@
     padding: 0;
   }
 
-  i.bi.bi-instagram {
-    top: 0;
-    left: calc((40px - var(--i-fsz)) / 2);
-  }
-
-  hr.leftline {
-    top: -6px;
-  }
-
   /* large header */
   header {
     width: 100%;
     height: auto;
-    /* aspect-ratio: 278 / 20; */
   }
 
   header .logo a {
@@ -41,15 +31,18 @@
   }
 
   header .pc-menu li {
-    width: 132px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
     height: 100px;
     text-align: center;
-    margin-right: 8px;
     line-height: 100px;
   }
 
   header .pc-menu a {
     width: 100%;
+    font-size: 16px;
   }
 
   header .pc-menu a:hover {
@@ -58,12 +51,10 @@
 
   header .pc-menu a.instagram {
     width: var(--a-fsz);
-    margin-top: 30px;
   }
   
   header .pc-menu .btn {
-    background: white;
-    color: black;
+    background: rgb(42, 41, 40);
     border-radius: 32px;
     font-size: var(--btn-fsz);
     cursor: pointer;
@@ -110,7 +101,6 @@
 
   /* large eyeimg */
   #eyeimg .images {
-    /* aspect-ratio: 7 / 3; */
     width: 90%;
     margin: 0 auto;
   }
