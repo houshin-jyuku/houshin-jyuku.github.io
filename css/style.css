@@ -278,7 +278,7 @@ header .sp-menu #open.hide {
 }
 
 .overlay li p {
-  font-size: 20px;
+  font-size: var(--p-fsz);
   line-height: 25px;
 }
 
